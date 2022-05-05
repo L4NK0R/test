@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    scrollbar-color: none;
+    scrollbar-width: none;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+@font-face {
+    font-family: "Main";
+    src: url("../fonts/Comfortaa-Bold.ttf");
+}
+
+body {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    font-family: "Main";
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    background-color: #131313;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    max-width: 1305px;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 30px 0 0 0;
+    align-content: center;
+}
+
+div.emp {
+    width: 130px;
+    height: 10px;
+}
+
+header.logo {
+    height: 75px;
+    width: 244px;
+}
+
+header>.container {
+    padding: 32px 0 0 0;
+    justify-content: space-between;
+}
+
+p {
+    color: #fff;
+}
+
+a:any-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+header>.container:nth-child(2) {
+    align-items: center;
+    height: 90px;
+}
+
+header>.container:nth-child(2)>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 600px;
+}
+
+header>.container:nth-child(2)>div p {
+    font-size: 24px;
+    margin: 0 7px 0 0;
+}
+
+header>.container:nth-child(2)>div a {
+    font-size: 24px;
+}
+
+header>.container:nth-child(2)>div>div {
+    display: flex;
+    width: 175px;
+    align-items: center;
+}
+
+.logo>img {
+    margin: 0 9px 0 0;
+    height: 75px;
+    width: 75px;
+}
+
+.downarr {
+    width: 18px;
+    height: 11.5px;
+}
+
+.login {
+    display: flex;
+    height: 75px;
+    width: 130px;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 244px;
+    height: 75px;
+}
+
+.logo>p {
+    font-size: 54px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 312px;
+    width: 153px;
+    align-items: center;
+
+}
+
+.card>img {
+    height: 206px;
+    width: 153px;
+    border-radius: 12px;
+    margin: 0 0 14px 0;
+    /* background-color: #d4d4d4; */
+}
+
+/* .card>p.name{
+    margin: 0 0 8px 0;
+    width: 153px;
+} */
+main>p {
+    font-size: 24px;
+}
+
+.name {
+    font-size: 20px;
+    margin: 0 0 7px 0;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.description {
+    font-size: 16px;
+    text-align: center;
+    color: #d4d4d4;
+}
+
+.namecategory {
+    margin: 0 0 25px 0;
+}
+
+.cards {
+    margin: 0 0 30px 0;
+    display: flex;
+    align-self: center;
+    width: 1287px;
+    justify-content: space-between;
+}
+
+.wideCards {
+    display: flex;
+    flex-direction: row;
+    width: 1287px;
+    align-self: center;
+    justify-content: space-between;
+    height: 230px;
+    margin: 0 0 72px 0;
+
+}
+
+.wCard {
+    border-radius: 20px;
+    width: 600px;
+    height: 230px;
+    background-color: #131313;
+}
+
+.sectionList {
+    width: 688px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+}
+
+.sect {
+    font-size: 25px;
+}
+
+.secSelected {
+    background-color: #383838;
+    width: 262px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginM {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 52px;
+    width: 60px;
+
+}
+
+.secSelectedM {
+    display: none;
+}
+
+.loginM>div {
+    display: flex;
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 40px;
+}
+
+p.unsupported {
+    display: none;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 1340px) {
+    header {
+        min-height: 200px;
+        height: 200px;
+        margin: 0 0 25px 0;
+
+    }
+
+    header>div.SectionstopList {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .emp {
+        display: none;
+    }
+
+    .logo>img {
+        display: flex;
+        width: 75px;
+        height: 75px;
+    }
+
+    .logo>p {
+        font-size: 54px;
+    }
+
+    .loginM {
+        display: flex;
+        align-self: center;
+    }
+
+    header>.container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 0 68px 0 68px;
+
+    }
+
+    .wideCards {
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        max-width: 1204px;
+        width: 100%;
+        padding: 0 68px;
+        height: max-content;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .namecategory {
+        padding: 0 0 0 68px;
+    }
+
+    .card {
+        margin: 0px 0px 30px 0px;
+    }
+
+    .containerM {
+        display: flex;
+        max-width: 1340px;
+        width: 100%;
+        justify-self: center;
+    }
+
+    .wideCards {
+        display: flex;
+        flex-direction: column;
+        max-width: 390px;
+        height: max-content;
+        align-content: center;
+        margin: 0 0 20px 0;
+    }
+
+    .wCard {
+        border-radius: 20px;
+        width: 340px;
+        height: 154px;
+        background-color: #131313;
+        margin: 0 0 35px 0;
+    }
+
+    a>div.wCard>p {
+        font-size: 24px;
+    }
+
+    .wCard1>img, .wCard2>img {
+        height: fit-content;
+        width: fit-content;
+        opacity: 20%;
+    }
+
+    .sectionList {
+        display: none;
+    }
+
+    .secSelectedM {
+        align-self: center;
+        font-size: 24px;
+        margin: px 0 63px 0;
+    }
+
+    .secSelectedM {
+        display: flex;
+        margin: 0 0 35px 0;
+    }
+}
+
+@media (max-width: 390px) {
+    header {
+        height: 111px;
+        margin: 0 0 25px 0;
+    }
+
+    header>div.SectionstopList {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .emp {
+        display: none;
+    }
+
+    .logo>img {
+        display: flex;
+        width: 75px;
+        height: 75px;
+    }
+
+    .logo>p {
+        font-size: 54px;
+    }
+
+    .loginM {
+        display: flex;
+        align-self: center;
+    }
+
+    header>.container {
+        display: flex;
+        max-width: 390px;
+        width: 100%;
+        padding: 24px 25px 0 25px;
+    }
+
+    .wideCards {
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        width: 390px;
+        height: max-content;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin: 0 0 30px 0;
+    }
+
+    .containerM {
+        display: flex;
+        max-width: 390px;
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .wideCards {
+        display: flex;
+        flex-direction: column;
+        max-width: 390px;
+        height: max-content;
+        align-content: center;
+        margin: 0 0 20px 0;
+    }
+
+    .wCard {
+        border-radius: 20px;
+        width: 340px;
+        height: 154px;
+        background-color: #131313;
+        margin: 0 0 35px 0;
+    }
+
+    a>div.wCard>p {
+        font-size: 24px;
+    }
+
+    .wCard1>img, .wCard2>img {
+        height: fit-content;
+        width: fit-content;
+        opacity: 20%;
+    }
+
+    .sectionList {
+        display: none;
+    }
+
+    .secSelectedM {
+        align-self: center;
+        font-size: 24px;
+        margin: px 0 63px 0;
+    }
+}
+
+@media (max-width: 260px) {
+    .unsupported {
+        display: none;
+    }
+
+    p.unsupported {
+        display: flex;
+    }
+
+    header {
+        display: none;
+    }
+}
+
+.LoginPopup {
+    display: flex;
+    position: absolute;
+    min-width: 421px;
+    width: 421px;
+    height: 487px;
+    min-height: 487px;
+    background-color: #ff00ffcc;
+    top: 10px;
+    right: 0px;
+    padding: 25px 0 0 0;
+    align-items: start;
+    justify-content: center;
+}
+
+.wCard p {
+    font-size: 56px;
+    padding: 0 0 0 34px;
+    position: absolute;
+}
+
+.wCard {
+    display: flex;
+    align-items: center;
+}
+
+.wCard1>img, .wCard2>img {
+    height: 100%;
+    width: 100%;
+    opacity: 20%;
+}
+
+.closeLoginM {
+    width: 60px;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.closeLoginM>div {
+    width: 60px;
+    height: 10px;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.closeLoginM>div:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.closeLoginM>div:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 26px;
+    height: 170px;
+    justify-content: space-between;
+}
+
+.popupMenu p {
+    font-size: 19px;
+}
+
+.choose .secSelected {
+    border-radius: 50px;
+    width: 200px;
+}
+
+.buttonsToLog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 145px;
+    margin: 0 0 35px 0;
+}
+
+.popupMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 2000px;
+    height: 100%;
+    min-height: 500px;
+}
+
+.reg, .log {
+    display: flex;
+    background-color: #383838;
+    border-radius: 50px;
+    height: 60px;
+    width: 290px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reg>p, .log>p {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
